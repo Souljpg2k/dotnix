@@ -109,6 +109,9 @@ in
           size = "80, 35";
           color = colors.bg;
           rounding = 18;
+          shadow_passes = 1;
+          shadow_size = 2;
+          shadow_boost = "1.0";
 
           position = "-140, 30";
           halign = "center";
@@ -119,6 +122,9 @@ in
           size = "80, 35";
           color = colors.bg;
           rounding = 18;
+          shadow_passes = 1;
+          shadow_size = 2;
+          shadow_boost = "1.0";
 
           position = "140, 30";
           halign = "center";
