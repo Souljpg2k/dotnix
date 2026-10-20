@@ -1,3 +1,14 @@
+let
+  colors = {
+    bg = "rgb(242, 242, 247)";
+    fg = "rgb(28, 28, 30)";
+    time = "rgb(242, 242, 247)";
+  };
+
+  fonts = {
+    family = "SF Pro Display";
+  };
+in
 {
   programs.hyprlock = {
     enable = true;
@@ -24,8 +35,8 @@
           dots_spacing = 0.4;
           dots_center = true;
           outer_color = "rgba(28, 28, 30, 0)";
-          inner_color = "rgb(242, 242, 247)";
-          font_color = "rgb(28, 28, 30)";
+          inner_color = colors.bg;
+          font_color = colors.fg;
           fade_on_empty = false;
           placeholder_text = "<i>Enter password</i>";
           shadow_passes = 1;
@@ -42,9 +53,9 @@
         {
           monitor = "";
           text = "cmd[update:60000] LC_TIME=en_US.UTF-8 date '+%A, %B %d'";
-          color = "rgb(242, 242, 247)";
+          color = colors.time;
           font_size = 16;
-          font_family = "SF Pro Display";
+          font_family = fonts.family;
           shadow_passes = 1;
           shadow_size = 3;
           shadow_boost = "0.8";
@@ -56,9 +67,9 @@
         {
           monitor = "";
           text = "$TIME";
-          color = "rgb(242, 242, 247)";
+          color = colors.time;
           font_size = 90;
-          font_family = "SF Pro Display";
+          font_family = fonts.family;
           shadow_passes = 1;
           shadow_size = 3;
           shadow_boost = "0.8";
@@ -69,17 +80,49 @@
         }
         {
           monitor = "";
-          text = "$LAYOUT";
-          color = "rgb(242, 242, 247)";
-          font_size = 8;
-          font_family = "SF Pro Display";
-          shadow_passes = 1;
-          shadow_size = 3;
-          shadow_boost = "0.8";
+          text = "Locked";
+          color = colors.fg;
+          font_size = 9;
+          font_family = fonts.family;
 
-          position = "-20, -20";
-          halign = "right";
-          valign = "top";
+          position = "-140, 40";
+          halign = "center";
+          valign = "bottom";
+        }
+
+        {
+          monitor = "";
+          text = "$LAYOUT";
+          color = colors.fg;
+          font_size = 9;
+          font_family = fonts.family;
+
+          position = "140, 40";
+          halign = "center";
+          valign = "bottom";
+        }
+      ];
+
+      shape = [
+        {
+          monitor = "";
+          size = "80, 35";
+          color = colors.bg;
+          rounding = 18;
+
+          position = "-140, 30";
+          halign = "center";
+          valign = "bottom";
+        }
+        {
+          monitor = "";
+          size = "80, 35";
+          color = colors.bg;
+          rounding = 18;
+
+          position = "140, 30";
+          halign = "center";
+          valign = "bottom";
         }
       ];
     };
