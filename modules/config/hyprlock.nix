@@ -6,7 +6,7 @@ let
   };
 
   fonts = {
-    family = "SF Pro Display";
+    family = "Inter";
   };
 in
 {
