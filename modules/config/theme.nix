@@ -1,5 +1,4 @@
 { pkgs, ... }:
-
 {
   home.pointerCursor = {
     gtk.enable = true;
@@ -8,12 +7,22 @@
     size = 24;
   };
 
+  qt = {
+    enable = true;
+    platformTheme.name = "qtct";
+    style.name = "kvantum";
+  };
+
   gtk = {
     enable = true;
-
     theme = {
-      package = pkgs.whitesur-gtk-theme;
-      name = "WhiteSur-light";
+      package = pkgs.colloid-gtk-theme.override {
+        themeVariants = [ "grey" ];
+        colorVariants = [ "light" ];
+        sizeVariants = [ "standard" ];
+        tweaks = [ "catppuccin" ];
+      };
+      name = "Colloid-Grey-Light-Catppuccin";
     };
 
     iconTheme = {
@@ -25,12 +34,6 @@
       name = "SF Pro Display";
       size = 12;
     };
-  };
-
-  qt = {
-    enable = true;
-    platformTheme.name = "qtct";
-    style.name = "kvantum";
   };
 
   xdg.configFile."qt6ct/qt6ct.conf".text = ''
