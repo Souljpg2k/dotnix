@@ -26,8 +26,8 @@
     };
 
     iconTheme = {
-      package = pkgs.whitesur-icon-theme;
-      name = "WhiteSur-light";
+      package = pkgs.adwaita-icon-theme;
+      name = "Adwaita";
     };
 
     font = {
