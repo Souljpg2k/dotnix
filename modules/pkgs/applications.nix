@@ -1,5 +1,4 @@
 { pkgs, inputs, ... }:
-
 {
   home.packages = with pkgs; [
     brave
@@ -12,6 +11,7 @@
     obsidian
     upscayl
     kdePackages.dolphin
+    inputs.helium.packages.${pkgs.stdenv.hostPlatform.system}.default
     inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 }
