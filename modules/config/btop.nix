@@ -3,7 +3,7 @@
     enable = true;
 
     settings = {
-      color_theme = "greyscale.theme";
+      color_theme = "nord.theme";
       theme_background = false;
     };
   };
