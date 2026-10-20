@@ -31,7 +31,7 @@
     };
 
     font = {
-      name = "SF Pro Display";
+      name = "Inter";
       size = 12;
     };
   };

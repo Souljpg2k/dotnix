@@ -1,13 +1,13 @@
 { pkgs, inputs, ... }:
-
 {
   fonts.fontconfig = {
     enable = true;
 
     defaultFonts = {
       sansSerif = [
-        "SF Pro Display"
-        "SF Pro Text"
+        "Inter"
+        "Noto Sans Thai"
+        "Kanit"
         "Sarabun"
         "Noto Sans CJK JP"
         "Noto Sans CJK KR"
@@ -17,7 +17,7 @@
       ];
 
       serif = [
-        "New York"
+        "Libre Baskerville"
         "Noto Serif Thai"
         "Noto Serif CJK JP"
         "Noto Serif CJK KR"
@@ -28,6 +28,7 @@
 
       monospace = [
         "JetBrainsMono Nerd Font"
+        "Sarabun"
       ];
 
       emoji = [
@@ -37,11 +38,16 @@
   };
 
   home.packages = with pkgs; [
+    inter
+    oswald
+    poppins
     noto-fonts
     nerd-fonts.jetbrains-mono
     sarabun-font
+    kanit-font
+    libre-baskerville
     material-symbols
-    inputs.apple-fonts.packages.${pkgs.stdenv.hostPlatform.system}.sf-pro 
+    inputs.apple-fonts.packages.${pkgs.stdenv.hostPlatform.system}.sf-pro
     inputs.apple-fonts.packages.${pkgs.stdenv.hostPlatform.system}.ny
   ];
 }
