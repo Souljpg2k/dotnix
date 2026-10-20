@@ -3,60 +3,42 @@
     enable = true;
 
     settings = {
-      "$schema" = "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json";
-
       logo = {
         source = "nixos_small";
-        padding = {
-          top = 2;
-        };
       };
 
       display = {
-        separator = "  ";
+        separator = " ";
       };
 
       modules = [
-        "title"
         {
           type = "os";
-          key = "OS";
+          key = "OS      ";
         }
         {
           type = "kernel";
-          key = "KERNEL";
+          key = "KERNEL  ";
         }
         {
           type = "uptime";
-          key = "UPTIME";
-        }
-        {
-          type = "packages";
-          key = "PKGS";
+          key = "UPTIME  ";
         }
         {
           type = "wm";
-          key = "WM";
+          key = "WM      ";
         }
         {
           type = "shell";
-          key = "SHELL";
+          key = "SHELL   ";
         }
         {
           type = "terminal";
           key = "TERMINAL";
         }
         {
-          type = "cpu";
-          key = "CPU";
-        }
-        {
-          type = "gpu";
-          key = "GPU";
-        }
-        {
           type = "memory";
-          key = "MEMORY";
+          key = "MEMORY  ";
         }
       ];
     };
