@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }:
+{ pkgs, ... }:
 {
   fonts.fontconfig = {
     enable = true;
@@ -47,7 +47,5 @@
     kanit-font
     libre-baskerville
     material-symbols
-    inputs.apple-fonts.packages.${pkgs.stdenv.hostPlatform.system}.sf-pro
-    inputs.apple-fonts.packages.${pkgs.stdenv.hostPlatform.system}.ny
   ];
 }
