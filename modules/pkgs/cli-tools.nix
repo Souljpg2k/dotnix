@@ -1,5 +1,4 @@
 { pkgs, ... }:
-
 {
   home.packages = with pkgs; [
     bat
@@ -12,7 +11,6 @@
     tree
     ripgrep
     psmisc
-    yazi
     yt-dlp
     ffmpeg
     ffmpegthumbnailer
