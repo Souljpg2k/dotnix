@@ -24,12 +24,10 @@
       };
       name = "Colloid-Grey-Light-Catppuccin";
     };
-
     iconTheme = {
       package = pkgs.adwaita-icon-theme;
       name = "Adwaita";
     };
-
     font = {
       name = "Inter";
       size = 12;
@@ -41,9 +39,10 @@
     icon_theme=WhiteSur-light
     style=kvantum
   '';
-
   xdg.configFile."Kvantum/kvantum.kvconfig".text = ''
     [General]
     theme=KvGnomeAlt
   '';
+
+   dconf.settings."org/gnome/desktop/interface".color-scheme = "prefer-light";
 }
