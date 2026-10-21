@@ -200,6 +200,7 @@ hl.bind("SUPER + Q", hl.dsp.exec_cmd(terminal))
 hl.bind("SUPER + RETURN", hl.dsp.exec_cmd(terminal2))
 hl.bind("SUPER + SHIFT + B", hl.dsp.exec_cmd(browser))
 hl.bind("SUPER + SHIFT + C", hl.dsp.exec_cmd("code"))
+hl.bind("SUPER + SHIFT + F", hl.dsp.exec_cmd("fuzzel"))
 
 -- Quickshell btw
 hl.bind("SUPER + SHIFT + T", hl.dsp.global("lazy:bar"))
@@ -336,4 +337,5 @@ hl.window_rule({ match = { class = "mpv" }, animation = "slide bottom", })
 -- Layer_rules
 
 hl.layer_rule({ match = { namespace = "rofi" }, dim_around = true, animation = "slide bottom", })
+hl.layer_rule({ match = { namespace = "fuzzel" }, dim_around = true, animation = "slide bottom", })
 hl.layer_rule({ match = { namespace = "notifications"}, animation = "slide right", })

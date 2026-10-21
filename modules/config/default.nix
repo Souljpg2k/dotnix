@@ -5,6 +5,7 @@
     ./fastfetch.nix
     ./fish.nix
     ./fonts.nix
+    ./fuzzel.nix
     ./hypridle.nix
     ./hyprlock.nix
     ./kitty.nix
