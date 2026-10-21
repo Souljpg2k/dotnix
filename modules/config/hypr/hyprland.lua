@@ -263,5 +263,5 @@ hl.window_rule({ match = { class = "org.gnome.Loupe" }, float = true, animation 
 hl.window_rule({ match = { class = "org.gnome.Decibels" }, float = true, animation = "slide bottom", })
 hl.window_rule({ match = { class = "mpv" }, animation = "slide bottom", })
 
-hl.layer_rule({ match = { namespace = "rofi" }, blur = true, ignore_alpha = 0, animation = "slide bottom", })
+hl.layer_rule({ match = { namespace = "rofi" }, dim_around = true, animation = "slide bottom", })
 hl.layer_rule({ match = { namespace = "notifications"}, animation = "slide right", })
