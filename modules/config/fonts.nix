@@ -2,7 +2,6 @@
 {
   fonts.fontconfig = {
     enable = true;
-
     defaultFonts = {
       sansSerif = [
         "Inter"
@@ -15,7 +14,6 @@
         "Noto Sans CJK TC"
         "Noto Sans"
       ];
-
       serif = [
         "Libre Baskerville"
         "Noto Serif Thai"
@@ -25,12 +23,10 @@
         "Noto Serif CJK TC"
         "Noto Serif"
       ];
-
       monospace = [
         "JetBrainsMono Nerd Font"
         "Sarabun"
       ];
-
       emoji = [
         "Noto Color Emoji"
       ];

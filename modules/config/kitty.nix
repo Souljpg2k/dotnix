@@ -1,9 +1,7 @@
 {
   programs.kitty = {
     enable = true;
-
     themeFile = "tokyo_night_night";
-
     shellIntegration.enableFishIntegration = true;
     shellIntegration.mode = "no-cursor";
     

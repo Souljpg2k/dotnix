@@ -1,16 +1,13 @@
 {
   programs.fastfetch = {
     enable = true;
-
     settings = {
       logo = {
         source = "nixos_small";
       };
-
       display = {
         separator = " ";
       };
-
       modules = [
         {
           type = "os";

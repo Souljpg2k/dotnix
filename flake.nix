@@ -1,5 +1,5 @@
 {
-  description = "NixOS EiEi";
+  description = "NixOS eiei";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
@@ -9,7 +9,7 @@
       url = "github:nix-community/home-manager/release-26.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
+    
     spicetify-nix = {
       url = "github:Gerg-L/spicetify-nix";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -28,7 +28,6 @@
 
   outputs =
     {
-      self,
       nixpkgs,
       home-manager,
       ...
@@ -36,9 +35,7 @@
     {
       nixosConfigurations.nixos-btw = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
-        specialArgs = {
-          inherit inputs;
-        };
+        specialArgs = { inherit inputs; };
 
         modules = [
           ./configuration
@@ -48,9 +45,7 @@
             home-manager.useUserPackages = true;
             home-manager.users.arx = import ./home.nix;
             home-manager.backupFileExtension = "backup";
-            home-manager.extraSpecialArgs = {
-              inherit inputs;
-            };
+            home-manager.extraSpecialArgs = { inherit inputs; };
           }
         ];
       };

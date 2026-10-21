@@ -44,5 +44,5 @@
     theme=KvGnomeAlt
   '';
 
-   dconf.settings."org/gnome/desktop/interface".color-scheme = "prefer-light";
+  dconf.settings."org/gnome/desktop/interface".color-scheme = "prefer-light";
 }

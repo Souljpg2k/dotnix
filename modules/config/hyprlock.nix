@@ -4,7 +4,6 @@ let
     fg = "rgb(28, 28, 30)";
     time = "rgb(242, 242, 247)";
   };
-
   fonts = {
     family = "Inter";
     icon = "Material Symbols Outlined";
@@ -13,12 +12,10 @@ in
 {
   programs.hyprlock = {
     enable = true;
-
     settings = {
       general = {
         hide_cursor = true;
       };
-
       background = [
         {
           monitor = "";
@@ -26,7 +23,6 @@ in
           brightness = 0.5;
         }
       ];
-
       input-field = [
         {
           monitor = "";
@@ -49,7 +45,6 @@ in
           valign = "bottom";
         }
       ];
-
       label = [
         {
           monitor = "";
@@ -113,7 +108,6 @@ in
           valign = "bottom";
         }
       ];
-
       shape = [
         {
           monitor = "";

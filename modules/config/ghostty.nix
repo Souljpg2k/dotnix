@@ -1,7 +1,6 @@
 {
   programs.ghostty = {
     enable = true;
-
     settings = {
       alpha-blending = "native";
       background-opacity = 0.3;
