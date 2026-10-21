@@ -7,6 +7,7 @@ let
 
   fonts = {
     family = "Inter";
+    icon = "Material Symbols Outlined";
   };
 in
 {
@@ -85,11 +86,21 @@ in
           font_size = 9;
           font_family = fonts.family;
 
-          position = "-140, 40";
+          position = "-135, 40";
           halign = "center";
           valign = "bottom";
         }
+        {
+          monitor = "";
+          text = "lock";
+          color = colors.fg;
+          font_size = 10;
+          font_family = fonts.icon;
 
+          position = "-165, 39";
+          halign = "center";
+          valign = "bottom";
+        }
         {
           monitor = "";
           text = "$LAYOUT";
