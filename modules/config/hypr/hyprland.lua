@@ -118,13 +118,14 @@ hl.device({
 })
 
 local terminal        = "kitty"
-local terminal2        = "ghostty"
+local terminal2       = "ghostty"
 local fileManager     = "dolphin"
 local browser         = "zen-beta"
 local browser2        = "brave"
 
-local wallpaperPicker = "~/nixos/scripts/wallpaper-picker.sh"
 local lock            = "~/nixos/scripts/lock.sh"
+local powerMenu       = "~/nixos/scripts/power-menu.sh"
+local wallpaperPicker = "~/nixos/scripts/wallpaper-picker.sh"
 
 local closeWindowBind = hl.bind("SUPER + C", hl.dsp.window.close())
 
@@ -148,8 +149,9 @@ hl.bind("SUPER + T", hl.dsp.global("lazy:bar"))
 
 -- Rofi
 hl.bind("SUPER + R", hl.dsp.exec_cmd("rofi -show drun"))
-hl.bind("SUPER + W", hl.dsp.exec_cmd(wallpaperPicker))
 hl.bind("SUPER + L", hl.dsp.exec_cmd(lock))
+hl.bind("SUPER + P", hl.dsp.exec_cmd(powerMenu))
+hl.bind("SUPER + W", hl.dsp.exec_cmd(wallpaperPicker))
 
 -- Cliphist
 hl.bind("SUPER + D",
