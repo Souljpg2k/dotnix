@@ -1,6 +1,7 @@
 {
   imports = [
     ./btop.nix
+    ./cava.nix
     ./fastfetch.nix
     ./fish.nix
     ./fonts.nix
