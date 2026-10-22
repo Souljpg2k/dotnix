@@ -1,6 +1,6 @@
 { config, ... }:
 let
-  hyprlua = "${config.home.homeDirectory}/nixos/modules/config/hypr/hyprland.lua";
+  hyprlua = "${config.home.homeDirectory}/nixos/home/config/hypr/hyprland.lua";
 in
 {
   home.username = "arx";
@@ -8,8 +8,8 @@ in
   home.stateVersion = "26.05";
 
   imports = [
-    ./modules/config
-    ./modules/pkgs
+    ./config
+    ./pkgs
   ];
 
   xdg.configFile."hypr/hyprland.lua".source = config.lib.file.mkOutOfStoreSymlink hyprlua;

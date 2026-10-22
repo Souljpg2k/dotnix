@@ -1,5 +1,5 @@
 {
-  description = "NixOS eiei";
+  description = "NixOS dotfiles";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
@@ -26,12 +26,7 @@
     };
   };
 
-  outputs =
-    {
-      nixpkgs,
-      home-manager,
-      ...
-    }@inputs:
+  outputs = { nixpkgs, home-manager, spicetify-nix, helium, zen-browser, ... }@inputs:
     {
       nixosConfigurations.nixos-btw = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
@@ -43,7 +38,7 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.arx = import ./home.nix;
+            home-manager.users.arx = import ./home;
             home-manager.backupFileExtension = "backup";
             home-manager.extraSpecialArgs = { inherit inputs; };
           }

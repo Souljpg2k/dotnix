@@ -1,0 +1,19 @@
+{
+  imports = [
+    ./btop
+    ./cava
+    ./fastfetch
+    ./fish
+    ./fontconfig
+    ./fuzzel
+    ./hypridle
+    ./hyprlock
+    ./kitty
+    ./ghostty
+    ./mpv
+    ./rofi
+    ./spicetify
+    ./syncthing
+    ./themes
+  ];
+}
