@@ -4,8 +4,12 @@
     bat
     nixfmt
     nil
-    prettierd
+    statix
+    shfmt
+    prettier
     ruff
+    stylua
+    black
     fzf
     tree
     ripgrep

@@ -9,6 +9,7 @@
       lock = "~/nixos/scripts/lock.sh";
       vi = "nvim";
       vim = "nvim";
+      py = "python";
     };
     shellAbbrs = {
       nrs = "sudo nixos-rebuild switch --flake ~/nixos#nixos-btw";
