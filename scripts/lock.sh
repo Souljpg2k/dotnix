@@ -1,12 +1,26 @@
 #!/usr/bin/env bash
 
-wal=~/.cache/hyprlock-wallpaper
-fallback=~/nixos/Wallpaper/default.jpg
+title="Hyprlock"
+message="is not installed ):"
 
-image=$(awww query 2>/dev/null | sed -n 's/.*currently displaying: image: \(.*\)$/\1/p' | head -n 1)
+if ! command -v hyprlock &>/dev/null; then
+    notify-send "$title" "$message"
+    echo "$title $message"
+    exit 1
+fi
 
-shopt -s nocasematch extglob
-[[ -f $image && $image == *.@(png|jpg|jpeg|webp) ]] || image=$fallback
+if pidof hyprlock >/dev/null; then
+    exit 0
+fi
 
-ln -sfn "$image" "$wal"
+if out=$(awww query 2>/dev/null); then
+    img=$(grep -m1 'image:' <<<"$out" | sed 's/.*image: //')
+fi
+
+if [[ ! -f $img ]]; then
+    img="$HOME/nixos/Wallpapers/wall0.png"
+fi
+
+export HYPRLAND_WALLPAPER="$img"
+
 exec hyprlock "$@"

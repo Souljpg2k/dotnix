@@ -19,7 +19,7 @@ in
       background = [
         {
           monitor = "";
-          path = "~/.cache/hyprlock-wallpaper";
+          path = "$HYPRLAND_WALLPAPER";
           brightness = 0.5;
         }
       ];
