@@ -65,13 +65,13 @@ hl.config({
 
         wobble =  {
             enabled   = true,
-            mesh      = 12,
-            stiffness = 150,
-            damping   = 12,
+            mesh      = 2,
+            stiffness = 350,
+            damping   = 15,
             mass      = 1,
             intensity = 0.3,
-            value_epsilon = 0.25,
-            velocity_epsilon = 2,
+            value_epsilon = 0.3,
+            velocity_epsilon = 1,
         },
 
         blur             = {
