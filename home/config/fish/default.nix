@@ -7,6 +7,8 @@
     shellAliases = {
       hypr = "vim ~/nixos/modules/config/hypr/hyprland.lua";
       lock = "~/nixos/scripts/lock.sh";
+      vi = "nvim";
+      vim = "nvim";
     };
     shellAbbrs = {
       nrs = "sudo nixos-rebuild switch --flake ~/nixos#nixos-btw";
@@ -25,8 +27,8 @@
       echo -n ' '(set_color $c)'$ '(set_color normal)
     '';
     shellInit = ''
-      set -gx EDITOR vim
-      set -gx VISUAL vim
+      set -gx EDITOR neovim
+      set -gx VISUAL neovim
     '';
   };
 }

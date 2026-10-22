@@ -18,9 +18,12 @@ hl.env("HYPRCURSOR_SIZE", "24")
 
 --AUTOSTART
 
+local kino = "qs -c ~/.config/kino"
+
 hl.on("hyprland.start", function ()
    hl.exec_cmd("awww-daemon")
    hl.exec_cmd("qs")
+   hl.exec_cmd("kino")
    hl.exec_cmd("dbus-update-activation-environment --systemd --all")
    hl.exec_cmd("systemctl --user start hyprpolkitagent")
    hl.exec_cmd("systemctl --user start opentabletdriver")
@@ -36,8 +39,8 @@ hl.config({
         gaps_in                 = 4,
         gaps_out                = 8,
         border_size             = 0,
-        resize_on_border        = true,
         extend_border_grab_area = 20,
+        resize_on_border        = true,
         allow_tearing           = false,
         locale                  = "en_US",
         layout                  = "dwindle",
@@ -181,7 +184,6 @@ local terminal2       = "ghostty"
 local fileManager     = "dolphin"
 local browser         = "zen-beta"
 local lock            = "~/nixos/scripts/lock.sh"
-local powerMenu       = "~/nixos/scripts/power-menu.sh"
 local wallpaperPicker = "~/nixos/scripts/wallpaper-picker.sh"
 local closeWindowBind = hl.bind("SUPER + C", hl.dsp.window.close())
 
@@ -203,12 +205,11 @@ hl.bind("SUPER + SHIFT + C", hl.dsp.exec_cmd("code"))
 hl.bind("SUPER + SHIFT + F", hl.dsp.exec_cmd("fuzzel"))
 
 -- Quickshell btw
-hl.bind("SUPER + SHIFT + T", hl.dsp.global("lazy:bar"))
+hl.bind("SUPER + SHIFT + T", hl.dsp.global("kino:bar"))
 
 -- Rofi
 hl.bind("SUPER + R", hl.dsp.exec_cmd("rofi -show drun"))
 hl.bind("SUPER + L", hl.dsp.exec_cmd(lock))
-hl.bind("SUPER + P", hl.dsp.exec_cmd(powerMenu))
 hl.bind("SUPER + W", hl.dsp.exec_cmd(wallpaperPicker))
 
 -- Cliphist

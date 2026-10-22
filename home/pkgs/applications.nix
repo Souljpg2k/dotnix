@@ -5,6 +5,7 @@
     tor-browser
     discord
     vscode
+    neovim
     obs-studio
     pavucontrol
     loupe
