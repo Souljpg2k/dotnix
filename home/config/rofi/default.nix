@@ -8,6 +8,7 @@
         text-selected: #645b6a;
         text-element:  #9e97a2;
         textbox:       #454447;
+        background-color: transparent;
     }
     configuration {
         show-icons: true;
