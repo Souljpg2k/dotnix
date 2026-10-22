@@ -7,8 +7,6 @@
     shellAliases = {
       hypr = "vim ~/nixos/modules/config/hypr/hyprland.lua";
       lock = "~/nixos/scripts/lock.sh";
-      vi = "nvim";
-      vim = "nvim";
       py = "python";
     };
     shellAbbrs = {

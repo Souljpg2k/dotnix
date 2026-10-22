@@ -11,6 +11,7 @@
     ./kitty
     ./ghostty
     ./mpv
+    ./neovim
     ./rofi
     ./spicetify
     ./syncthing
