@@ -1,4 +1,23 @@
 { pkgs, ... }:
+let
+  theme = {
+    package = pkgs.colloid-gtk-theme.override {
+      themeVariants = [ "grey" ];
+      colorVariants = [ "light" ];
+      sizeVariants = [ "standard" ];
+      tweaks = [ "catppuccin" ];
+    };
+    name = "Colloid-Grey-Light-Catppuccin";
+  };
+  iconTheme = {
+    package = pkgs.adwaita-icon-theme;
+    name = "Adwaita";
+  };
+  font = {
+    name = "Inter";
+    size = 12;
+  };
+in
 {
   home.pointerCursor = {
     gtk.enable = true;
@@ -14,23 +33,10 @@
   };
 
   gtk = {
+    inherit theme iconTheme font;
     enable = true;
-    theme = {
-      package = pkgs.colloid-gtk-theme.override {
-        themeVariants = [ "grey" ];
-        colorVariants = [ "light" ];
-        sizeVariants = [ "standard" ];
-        tweaks = [ "catppuccin" ];
-      };
-      name = "Colloid-Grey-Light-Catppuccin";
-    };
-    iconTheme = {
-      package = pkgs.adwaita-icon-theme;
-      name = "Adwaita";
-    };
-    font = {
-      name = "Inter";
-      size = 12;
+    gtk4 = {
+      inherit theme iconTheme font;
     };
   };
 
@@ -43,6 +49,4 @@
     [General]
     theme=KvGnomeAlt
   '';
-
-  dconf.settings."org/gnome/desktop/interface".color-scheme = "prefer-light";
 }
