@@ -11,7 +11,7 @@
       cursor-style = "block";
       cursor-style-blink = true;
       confirm-close-surface = false;
-      font-family = "JetBrainsMono Nerd Font";
+      font-family = "Hack Nerd Font";
       font-size = 12;
       scrollbar = "never";
       shell-integration = "fish";

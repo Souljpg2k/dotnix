@@ -24,8 +24,9 @@
         "Noto Serif"
       ];
       monospace = [
+        "DejaVu Sans Mono"
+        "Hack Nerd Font"
         "JetBrainsMono Nerd Font"
-        "Tlwg Mono"
       ];
       emoji = [
         "Noto Color Emoji"
@@ -38,9 +39,10 @@
     oswald
     poppins
     noto-fonts
+    nerd-fonts.hack
     nerd-fonts.jetbrains-mono
+    dejavu_fonts
     sarabun-font
-    tlwg
     kanit-font
     libre-baskerville
     material-symbols
