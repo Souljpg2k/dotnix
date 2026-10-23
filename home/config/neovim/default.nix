@@ -1,4 +1,7 @@
-{ pkgs, ... }:
+{ pkgs, config, ... }:
+let
+  nvim = "${config.home.homeDirectory}/nixos/home/config/neovim/init.lua";
+in
 {
   programs.neovim = {
     enable = true;
@@ -19,5 +22,5 @@
     ];
   };
 
-  xdg.configFile."nvim/init.lua".source = ./init.lua;
+  xdg.configFile."nvim/init.lua".source = config.lib.file.mkOutOfStoreSymlink nvim;
 }

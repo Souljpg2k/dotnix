@@ -13,11 +13,11 @@ in
       };
       listener = [
         {
-          timeout = 300;
+          timeout = 600;
           on-timeout = lock;
         }
         {
-          timeout = 330;
+          timeout = 630;
           on-timeout = ''hyprctl dispatch 'hl.dsp.dpms({ action = "disable" })' '';
           on-resume = ''hyprctl dispatch 'hl.dsp.dpms({ action = "enable" })' '';
         }
