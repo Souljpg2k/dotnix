@@ -7,7 +7,7 @@
         framerate = 60;
         autosens = 1;
         bars = 0;
-        bar_width = 3;
+        bar_width = 2;
         bar_spacing = 1;
       };
       input = {
