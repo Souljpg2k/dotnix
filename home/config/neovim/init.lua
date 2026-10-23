@@ -1,4 +1,5 @@
 require("gitsigns").setup()
+
 require("ibl").setup({
     indent = {
         char = "│",
@@ -17,12 +18,14 @@ local set = vim.opt
 
 set.number = true
 set.relativenumber = false
+set.signcolumn = "yes"
+set.cursorline = true
+set.wrap = false
 
-set.tabstop = 4
-set.shiftwidth = 4
+set.tabstop = 2
+set.shiftwidth = 2
 set.autoindent = true
 set.expandtab = true
-set.wrap = false
 
 set.ignorecase = true
 set.smartcase = true
@@ -30,16 +33,12 @@ set.incsearch = true
 
 set.swapfile = false
 set.backup = false
-
 set.clipboard = "unnamedplus"
-
-set.cursorline = true
 
 set.fillchars:append({ eob = " " })
 
 set.termguicolors = true
 set.background = "dark"
-set.signcolumn = "yes"
 
 vim.cmd.syntax("on")
 
@@ -48,14 +47,6 @@ require("tokyonight").setup({
     transparent = true,
 })
 vim.cmd.colorscheme("tokyonight")
-
-vim.api.nvim_create_autocmd("FileType", {
-    pattern = "nix",
-    callback = function()
-        vim.opt_local.tabstop = 2
-        vim.opt_local.shiftwidth = 2
-    end,
-})
 
 vim.api.nvim_create_autocmd("FileType", {
     callback = function()
