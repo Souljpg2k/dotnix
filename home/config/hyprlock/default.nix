@@ -1,8 +1,8 @@
 let
   colors = {
-    bg = "rgb(242, 242, 247)";
-    fg = "rgb(28, 28, 30)";
-    time = "rgb(242, 242, 247)";
+    bg = "rgb(17, 17, 27)";
+    fg = "rgb(205, 214, 244)";
+    time = "rgb(205, 214, 244)";
   };
   fonts = {
     family = "Inter";

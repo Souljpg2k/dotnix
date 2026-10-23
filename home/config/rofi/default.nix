@@ -2,7 +2,7 @@
   programs.rofi.enable = true;
   xdg.configFile."rofi/config.rasi".text = ''
     * {
-        background:     #1e1e2e;
+        background:     #11111b;
         foreground:     #cdd6f4;
         selected:       #45475a;
         text-selected:  #cba6f7;

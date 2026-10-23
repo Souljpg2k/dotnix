@@ -16,7 +16,7 @@
         inner-pad = 10;
       };
       colors = {
-        background = "#1e1e2eff";
+        background = "#11111bff";
         text = "#cdd6f4ff";
         message = "#89dcebff";
         match = "#89b4faff";
