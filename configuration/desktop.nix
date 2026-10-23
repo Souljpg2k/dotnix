@@ -38,4 +38,10 @@ in
   hardware.opentabletdriver.enable = true;
   hardware.uinput.enable = true;
   boot.kernelModules = [ "uinput" ];
+
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 7d";
+  };
 }
