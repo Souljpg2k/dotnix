@@ -1,22 +1,22 @@
 {
   imports = [
-    ./bat
-    ./btop
-    ./cava
-    ./fastfetch
-    ./fish
-    ./fontconfig
-    ./fuzzel
     ./hypr
-    ./hypridle
-    ./hyprlock
-    ./kitty
-    ./ghostty
-    ./mpv
     ./neovim
-    ./rofi
-    ./spicetify
-    ./syncthing
-    ./themes
+    ./bat.nix
+    ./btop.nix
+    ./cava.nix
+    ./fastfetch.nix
+    ./fish.nix
+    ./fontconfig.nix
+    ./fuzzel.nix
+    ./hypridle.nix
+    ./hyprlock.nix
+    ./kitty.nix
+    ./ghostty.nix
+    ./mpv.nix
+    ./rofi.nix
+    ./spicetify.nix
+    ./syncthing.nix
+    ./themes.nix
   ];
 }

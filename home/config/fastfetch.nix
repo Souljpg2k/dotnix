@@ -10,6 +10,10 @@
       };
       modules = [
         {
+          type = "title";
+          key = "USER    ";
+        }
+        {
           type = "os";
           key = "OS      ";
         }

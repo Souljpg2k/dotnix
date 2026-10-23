@@ -3,7 +3,7 @@
     enable = true;
     settings = {
       alpha-blending = "native";
-      background-opacity = 0.3;
+      background-opacity = 0.98;
       background-blur = true;
       bell-features = "no-title";
       command = "fish";
