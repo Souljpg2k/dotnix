@@ -23,7 +23,7 @@ local kino = "qs -c ~/.config/kino"
 hl.on("hyprland.start", function ()
    hl.exec_cmd("awww-daemon")
    hl.exec_cmd("qs")
-   hl.exec_cmd("kino")
+   hl.exec_cmd(kino)
    hl.exec_cmd("dbus-update-activation-environment --systemd --all")
    hl.exec_cmd("systemctl --user start hyprpolkitagent")
    hl.exec_cmd("systemctl --user start opentabletdriver")
