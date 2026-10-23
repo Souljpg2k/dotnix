@@ -25,7 +25,7 @@
       ];
       monospace = [
         "JetBrainsMono Nerd Font"
-        "Sarabun"
+        "Tlwg Mono"
       ];
       emoji = [
         "Noto Color Emoji"
@@ -40,6 +40,7 @@
     noto-fonts
     nerd-fonts.jetbrains-mono
     sarabun-font
+    tlwg
     kanit-font
     libre-baskerville
     material-symbols
