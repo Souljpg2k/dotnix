@@ -16,13 +16,13 @@
         inner-pad = 10;
       };
       colors = {
-        background = "#f8f6fbff";
-        text = "#a8a8a8ff";
-        message = "#6cc9ffff";
-        match = "#6cc9ffff";
-        selection = "#e5e7efff";
-        selection-text = "#5f5f5fff";
-        selection-match = "#a4a2ffff";
+        background = "#1e1e2eff";
+        text = "#cdd6f4ff";
+        message = "#89dcebff";
+        match = "#89b4faff";
+        selection = "#45475aff";
+        selection-text = "#cdd6f4ff";
+        selection-match = "#cba6f7ff";
       };
       border = {
         width = 0;
