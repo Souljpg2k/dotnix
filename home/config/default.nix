@@ -6,6 +6,7 @@
     ./fish
     ./fontconfig
     ./fuzzel
+    ./hypr
     ./hypridle
     ./hyprlock
     ./kitty
