@@ -1,6 +1,6 @@
 { pkgs, config, ... }:
 let
-  nvim = "${config.home.homeDirectory}/nixos/home/config/neovim/init.lua";
+  nvim = "${config.home.homeDirectory}/dotnix/home/config/neovim/init.lua";
 in
 {
   programs.neovim = {

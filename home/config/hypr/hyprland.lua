@@ -183,8 +183,8 @@ local terminal        = "kitty"
 local terminal2       = "ghostty"
 local fileManager     = "dolphin"
 local browser         = "zen-beta"
-local lock            = "~/nixos/scripts/lock.sh"
-local wallpaperPicker = "~/nixos/scripts/wallpaper-picker.sh"
+local lock            = "~/dotnix/scripts/lock.sh"
+local wallpaperPicker = "~/dotnix/scripts/wallpaper-picker.sh"
 local closeWindowBind = hl.bind("SUPER + C", hl.dsp.window.close())
 
 -- Exit hyprland

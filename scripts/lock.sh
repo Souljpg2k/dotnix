@@ -18,7 +18,7 @@ if out=$(awww query 2>/dev/null); then
 fi
 
 if [[ ! -f $img ]]; then
-    img="$HOME/nixos/Wallpapers/wall0.png"
+    img="./Wallpapers/wall0.png"
 fi
 
 export HYPRLAND_WALLPAPER="$img"

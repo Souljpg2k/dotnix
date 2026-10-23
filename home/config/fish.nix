@@ -7,12 +7,12 @@
     '';
 
     shellAliases = {
-      hypr = "vim ~/nixos/modules/config/hypr/hyprland.lua";
-      lock = "~/nixos/scripts/lock.sh";
+      hypr = "vim ~/dotnix/modules/config/hypr/hyprland.lua";
+      lock = "~/dotnix/scripts/lock.sh";
       py = "python";
     };
     shellAbbrs = {
-      nrs = "sudo nixos-rebuild switch --flake ~/nixos#nixos-btw";
+      nrs = "sudo nixos-rebuild switch --flake ~/dotnix#nixos-btw";
       ncg = "sudo nix-collect-garbage -d";
       ff = "fastfetch";
     };
