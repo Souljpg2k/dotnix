@@ -2,12 +2,12 @@
   programs.rofi.enable = true;
   xdg.configFile."rofi/config.rasi".text = ''
     * {
-        background:    #f8f6fb;
-        foreground:    #454447;
-        selected:      #e5e4eb;
-        text-selected: #645b6a;
-        text-element:  #9e97a2;
-        textbox:       #454447;
+        background:     #1e1e2e;
+        foreground:     #cdd6f4;
+        selected:       #45475a;
+        text-selected:  #cba6f7;
+        text-element:   #a6adc8;
+        textbox:        #cdd6f4;
         background-color: transparent;
     }
     configuration {

@@ -1,13 +1,12 @@
 { pkgs, ... }:
 let
   theme = {
-    package = pkgs.colloid-gtk-theme.override {
-      themeVariants = [ "grey" ];
-      colorVariants = [ "light" ];
-      sizeVariants = [ "standard" ];
-      tweaks = [ "catppuccin" ];
+    package = pkgs.catppuccin-gtk.override {
+      accents = [ "mauve" ];
+      size = "standard";
+      variant = "mocha";
     };
-    name = "Colloid-Grey-Light-Catppuccin";
+    name = "catppuccin-mocha-mauve-standard";
   };
   iconTheme = {
     package = pkgs.adwaita-icon-theme;
@@ -49,4 +48,5 @@ in
     [General]
     theme=KvGnomeAlt
   '';
+  dconf.settings."org/gnome/desktop/interface".color-scheme = "prefer-dark";
 }
