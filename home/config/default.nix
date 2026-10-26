@@ -1,0 +1,22 @@
+{
+  imports = [
+    ./emacs
+    ./hypr
+    ./bat.nix
+    ./btop.nix
+    ./cava.nix
+    ./fastfetch.nix
+    ./fish.nix
+    ./fontconfig.nix
+    ./ghostty.nix
+    ./hypridle.nix
+    ./hyprlock.nix
+    ./hyprpaper.nix
+    ./kitty.nix
+    ./mpv.nix
+    ./rofi.nix
+    ./spicetify.nix
+    ./syncthing.nix
+    ./themes.nix
+  ];
+}
