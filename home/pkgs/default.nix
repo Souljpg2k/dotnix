@@ -43,8 +43,6 @@
     
     hyprshot
     hyprpicker
-    hyprpaper
-    hyprsunset
     hyprshutdown
     hyprpolkitagent
 

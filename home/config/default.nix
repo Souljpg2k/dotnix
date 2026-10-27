@@ -12,6 +12,7 @@
     ./hypridle.nix
     ./hyprlock.nix
     ./hyprpaper.nix
+    ./hyprsunset.nix
     ./kitty.nix
     ./mpv.nix
     ./rofi.nix
