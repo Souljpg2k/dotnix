@@ -4,7 +4,6 @@
     discord
     obsidian
     loupe
-    nautilus
     kdePackages.dolphin
 
     vscode
