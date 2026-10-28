@@ -13,7 +13,7 @@ let
     name = "Adwaita";
   };
   font = {
-    name = "Inter";
+    name = "Inter Display";
     size = 12;
   };
 in

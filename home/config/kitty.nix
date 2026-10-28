@@ -6,7 +6,7 @@
     shellIntegration.mode = "no-cursor";
     
     font = {
-      name = "Hack Nerd Font";
+      name = "Hack Nerd Font Mono";
       size = 12.0;
     };
 
