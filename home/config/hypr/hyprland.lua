@@ -312,6 +312,8 @@ hl.window_rule({ match = { class = "org.pulseaudio.pavucontrol" }, float = true,
 hl.window_rule({ match = { class = "org.kde.dolphin" }, float = true, pin = true, animation = "slide bottom", })
 hl.window_rule({ match = { class = "org.gnome.Loupe" }, float = true, animation = "slide bottom", })
 hl.window_rule({ match = { class = "mpv" }, animation = "slide bottom", })
+hl.window_rule({ match = { class = "xdg-desktop-portal-gtk" }, float = true, size = { 900, 600}, })
+hl.window_rule({ match = { class = "ai.storyteller.photocraft" }, float = true,  size = { 1000, 600}, })
 
 -- Layer_rules
 

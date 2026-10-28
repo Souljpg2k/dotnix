@@ -26,7 +26,9 @@ in
 
   services.udisks2.enable = true;
   services.gvfs.enable = true;
-
+  
+  services.colord.enable = true;
+  
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;

@@ -24,9 +24,14 @@
       url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    photocraft = {
+      url =  "github:Souljpg2k/nixpkg-photocraft";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, home-manager, spicetify-nix, helium, quickshell, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, spicetify-nix, helium, quickshell, photocraft, ... }@inputs:
     let
       system = "x86_64-linux";
     in
@@ -42,6 +47,7 @@
             environment.systemPackages = [
               helium.packages.${system}.default
               quickshell.packages.${system}.default
+              photocraft.packages.${system}.default
             ];
             
             home-manager = {
