@@ -16,6 +16,7 @@
     ./kitty.nix
     ./mpv.nix
     ./rofi.nix
+    ./starship.nix
     ./spicetify.nix
     ./syncthing.nix
     ./themes.nix

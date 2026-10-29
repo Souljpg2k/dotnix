@@ -74,11 +74,11 @@ hl.config({
 
         blur             = {
             enabled           = true,
-            size              = 1,
+            size              = 2,
             passes            = 2, 
             brightness        = 1,
             contrast          = 1,
-            xray              = false,
+            xray              = true,
             special           = false,
             ignore_opacity    = true,
             new_optimizations = true,
@@ -88,7 +88,7 @@ hl.config({
             variant           = "drops",
 
             drops = {
-                speed = 3,
+                speed = 2,
             },
 
             glass = {

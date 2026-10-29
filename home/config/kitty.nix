@@ -6,7 +6,7 @@
     shellIntegration.mode = "no-cursor";
     
     font = {
-      name = "Hack Nerd Font Mono";
+      name = "JetBrainsMono Nerd Font";
       size = 12.0;
     };
 
@@ -19,7 +19,7 @@
       copy_on_select = "yes";
       mouse_hide_wait = 1;
       window_padding_width = 21;
-      background_opacity = 0.7;
+      background_opacity = 0.99;
       dynamic_background_opacity = true;
     };
   };
