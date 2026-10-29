@@ -25,13 +25,13 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    photocraft = {
-      url =  "github:Souljpg2k/nixpkg-photocraft";
+    craftnix = {
+      url = "github:Souljpg2k/nixpkg-craft";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, spicetify-nix, helium, quickshell, photocraft, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, spicetify-nix, helium, quickshell, craftnix, ... }@inputs:
     let
       system = "x86_64-linux";
     in
@@ -47,7 +47,8 @@
             environment.systemPackages = [
               helium.packages.${system}.default
               quickshell.packages.${system}.default
-              photocraft.packages.${system}.default
+              craftnix.packages.${system}.photocraft
+              craftnix.packages.${system}.effectcraft
             ];
             
             home-manager = {

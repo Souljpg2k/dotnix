@@ -33,6 +33,26 @@
         "type": "github"
       }
     },
+    "craftnix": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1793259199,
+        "narHash": "sha256-eK3tLwWkKM3PWEIL7Uh3SV/1FGppW+Ac7FZVUBIsuQ8=",
+        "owner": "Souljpg2k",
+        "repo": "nixpkg-craft",
+        "rev": "63cc4934e64e083664641673907b5096cac611fe",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Souljpg2k",
+        "repo": "nixpkg-craft",
+        "type": "github"
+      }
+    },
     "flake-compat": {
       "flake": false,
       "locked": {
@@ -456,26 +476,6 @@
         "type": "github"
       }
     },
-    "photocraft": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1793216939,
-        "narHash": "sha256-0onZLzQzEt1cly5wrw3Yp4NPItVuq39wFp2IrdwwViM=",
-        "owner": "Souljpg2k",
-        "repo": "nixpkg-photocraft",
-        "rev": "3fba806b59710d4fba90f37cd7074d35d36f8452",
-        "type": "github"
-      },
-      "original": {
-        "owner": "Souljpg2k",
-        "repo": "nixpkg-photocraft",
-        "type": "github"
-      }
-    },
     "pre-commit-hooks": {
       "inputs": {
         "flake-compat": "flake-compat",
@@ -520,11 +520,11 @@
     },
     "root": {
       "inputs": {
+        "craftnix": "craftnix",
         "helium": "helium",
         "home-manager": "home-manager",
         "hyprland": "hyprland",
         "nixpkgs": "nixpkgs_2",
-        "photocraft": "photocraft",
         "quickshell": "quickshell",
         "spicetify-nix": "spicetify-nix"
       }
