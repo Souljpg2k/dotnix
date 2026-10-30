@@ -8,7 +8,5 @@
     ./pkgs
   ];
 
-  services.awww.enable = true;
-
   programs.home-manager.enable = true;
 }

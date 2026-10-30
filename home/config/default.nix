@@ -2,6 +2,7 @@
   imports = [
     ./emacs
     ./hypr
+    ./awww.nix
     ./bat.nix
     ./btop.nix
     ./cava.nix

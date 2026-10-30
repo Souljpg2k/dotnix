@@ -19,7 +19,7 @@ in
       background = [
         {
           monitor = "";
-          path = "$HOME/dotnix/home/wallpaper/default.jpg";
+          path = "$WALLPAPER";
           brightness = 0.5;
         }
       ];
