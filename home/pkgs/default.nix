@@ -38,6 +38,7 @@
     libnotify
     
     unzip
+    unrar
     zip
     
     hyprshot

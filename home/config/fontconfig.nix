@@ -12,7 +12,7 @@
         "Noto Serif"
       ];
       monospace = [
-        "Hack Nerd Font"
+        "Iosevka Nerd Font"
         "JetBrainsMono Nerd Font"
       ];
       emoji = [
@@ -26,8 +26,8 @@
     oswald
     poppins
     noto-fonts
-    nerd-fonts.hack
     nerd-fonts.jetbrains-mono
+    nerd-fonts.iosevka
     kanit-font
     libre-baskerville
     material-symbols

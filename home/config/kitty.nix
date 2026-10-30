@@ -19,7 +19,7 @@
       copy_on_select = "yes";
       mouse_hide_wait = 1;
       window_padding_width = 21;
-      background_opacity = 0.99;
+      background_opacity = 0.5;
       dynamic_background_opacity = true;
     };
   };

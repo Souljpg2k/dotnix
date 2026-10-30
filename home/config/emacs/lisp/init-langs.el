@@ -7,7 +7,7 @@
 (require 'lua-mode)
 
 (add-to-list 'auto-mode-alist '("\\.nix\\'" . nix-mode))
-(add-to-list 'auto-mode-alist '("\\.ts\\'" . typescript-mode))
+(add-to-list 'auto-mode-alist '("\\.ts\\'"  . typescript-mode))
 (add-to-list 'auto-mode-alist '("\\.tsx\\'" . tsx-ts-mode))
 (add-to-list 'auto-mode-alist '("\\.jsx\\'" . tsx-ts-mode))
 (add-to-list 'auto-mode-alist '("\\.qml\\'" . qml-mode))

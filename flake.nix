@@ -9,14 +9,9 @@
       url = "github:nix-community/home-manager/release-26.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    
+
     spicetify-nix = {
       url = "github:Gerg-L/spicetify-nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    helium = {
-      url = "github:schembriaiden/helium-browser-nix-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -29,9 +24,24 @@
       url = "github:Souljpg2k/nixpkg-craft";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    zen-browser = {
+      url = "github:0xc000022070/zen-browser-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, home-manager, spicetify-nix, helium, quickshell, craftnix, ... }@inputs:
+  outputs =
+    {
+      self,
+      nixpkgs,
+      home-manager,
+      spicetify-nix,
+      quickshell,
+      craftnix,
+      zen-browser,
+      ...
+    }@inputs:
     let
       system = "x86_64-linux";
     in
@@ -45,12 +55,12 @@
 
           {
             environment.systemPackages = [
-              helium.packages.${system}.default
               quickshell.packages.${system}.default
               craftnix.packages.${system}.photocraft
               craftnix.packages.${system}.effectcraft
+              zen-browser.packages.${system}.default
             ];
-            
+
             home-manager = {
               useGlobalPkgs = true;
               useUserPackages = true;
