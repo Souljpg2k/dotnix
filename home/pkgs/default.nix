@@ -7,7 +7,6 @@
     kdePackages.dolphin
 
     vscode
-    vim
 
     brave
     tor-browser
@@ -24,23 +23,23 @@
     tree
     ripgrep
     psmisc
-    
+
     obs-studio
     pavucontrol
     yt-dlp
     ffmpeg
     ffmpegthumbnailer
     playerctl
-    
+
     wl-clipboard
     cliphist
-    
+
     libnotify
-    
+
     unzip
     unrar
     zip
-    
+
     hyprshot
     hyprpicker
     hyprshutdown

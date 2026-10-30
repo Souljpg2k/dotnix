@@ -20,5 +20,6 @@
     ./spicetify.nix
     ./syncthing.nix
     ./themes.nix
+    ./vim.nix
   ];
 }
