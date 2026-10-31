@@ -26,9 +26,9 @@ in
 
   services.udisks2.enable = true;
   services.gvfs.enable = true;
-  
+
   services.colord.enable = true;
-  
+
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
@@ -40,4 +40,6 @@ in
   hardware.opentabletdriver.enable = true;
   hardware.uinput.enable = true;
   boot.kernelModules = [ "uinput" ];
+
+  programs.dconf.enable = true;
 }

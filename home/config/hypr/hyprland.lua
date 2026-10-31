@@ -198,8 +198,10 @@ hl.bind("SUPER + SHIFT + B", hl.dsp.exec_cmd(browser2))
 hl.bind("SUPER + SHIFT + C", hl.dsp.exec_cmd("code"))
 
 -- Quickshell
-hl.bind("SUPER + SHIFT + T", hl.dsp.global("lazy:bar"))
-hl.bind("SUPER + K", hl.dsp.global("lazy:toggleDark")) 
+hl.bind("SUPER + SHIFT + T", hl.dsp.global("kino:bar"))
+hl.bind("SUPER + CTRL + C ", hl.dsp.global("kino:clock"))
+hl.bind("SUPER + K", hl.dsp.global("kino:toggleDark"))
+hl.bind("SUPER + M", hl.dsp.global("kino:media"))
 
 -- Rofi
 hl.bind("SUPER + R", hl.dsp.exec_cmd("rofi -show drun"))
