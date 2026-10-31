@@ -38,6 +38,4 @@ in
       inherit theme iconTheme font;
     };
   };
-  
-  dconf.settings."org/gnome/desktop/interface".color-scheme = "prefer-dark";
 }
