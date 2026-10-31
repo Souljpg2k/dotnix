@@ -177,7 +177,7 @@ local terminal        = "kitty"
 local terminal2       = "ghostty"
 local fileManager     = "dolphin"
 local browser         = "brave"
-local browser2        = "helium"
+local browser2        = "zen-beta"
 local closeWindowBind = hl.bind("SUPER + C", hl.dsp.window.close())
 
 -- Exit hyprland
@@ -217,6 +217,10 @@ hl.bind("SUPER + A", hl.dsp.exec_cmd("hyprpicker -a"))
 hl.bind("SUPER + F", hl.dsp.exec_cmd("hyprshot -m region -o $HOME/Pictures/Screenshots"))
 hl.bind("SUPER + G", hl.dsp.exec_cmd("hyprshot -m window -o $HOME/Pictures/Screenshots"))
 hl.bind("SUPER + Print", hl.dsp.exec_cmd("hyprshot -m output -o $HOME/Pictures/Screenshots"))
+
+-- Scripts
+hl.bind("SUPER + L", hl.dsp.exec_cmd("lock"))
+hl.bind("SUPER + W", hl.dsp.exec_cmd("rwall"))
 
 -- Move focus with SUPER + arrow keys
 hl.bind("SUPER + left", hl.dsp.focus({ direction = "left" }))
