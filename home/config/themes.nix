@@ -1,5 +1,12 @@
 { pkgs, ... }:
 let
+  kvantumVariant = "mocha";
+  kvantumAccent = "mauve";
+  kvantumName = "catppuccin-${kvantumVariant}-${kvantumAccent}";
+  kvantumPkg = pkgs.catppuccin-kvantum.override {
+    variant = kvantumVariant;
+    accent = kvantumAccent;
+  };
   theme = {
     package = pkgs.catppuccin-gtk.override {
       accents = [ "mauve" ];
@@ -38,4 +45,42 @@ in
       inherit theme iconTheme font;
     };
   };
+
+  xdg.configFile = {
+    "Kvantum/kvantum.kvconfig".text = ''
+      [General]
+      theme=${kvantumName}
+    '';
+    "Kvantum/${kvantumName}".source = "${kvantumPkg}/share/Kvantum/${kvantumName}";
+  };
+  xdg.configFile."dolphinrc".text = ''
+    MenuBar=Disabled
+
+    [CompactMode]
+    MaximumTextWidthIndex=2
+    UseSystemFont=false
+
+    [ContextMenu]
+    ShowCopyMoveMenu=true
+
+    [General]
+    ModifiedStartupSettings=true
+    ShowFullPath=true
+    ShowStatusBar=FullWidth
+    Version=202
+    ViewPropsTimestamp=2026,8,23,23,29,45.034
+
+    [IconsMode]
+    UseSystemFont=false
+
+    [KFileDialog Settings]
+    Places Icons Auto-resize=false
+    Places Icons Static Size=22
+
+    [MainWindow]
+    MenuBar=Disabled
+
+    [UiSettings]
+    ColorScheme=default
+  '';
 }
