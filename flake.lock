@@ -40,11 +40,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1793259199,
-        "narHash": "sha256-eK3tLwWkKM3PWEIL7Uh3SV/1FGppW+Ac7FZVUBIsuQ8=",
+        "lastModified": 1793549591,
+        "narHash": "sha256-jt8KgWGgFZOp1AERqUeKwZyv38l7E9x8q8/yDzjmzH4=",
         "owner": "Souljpg2k",
         "repo": "nixpkg-craft",
-        "rev": "63cc4934e64e083664641673907b5096cac611fe",
+        "rev": "59e8dbd99f3fad37be68700412675fb49f865f89",
         "type": "github"
       },
       "original": {
