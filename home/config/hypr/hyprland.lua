@@ -61,17 +61,6 @@ hl.config({
             scale        = 1.0,
         },
 
-        wobble =  {
-            enabled   = true,
-            mesh      = 2,
-            stiffness = 350,
-            damping   = 15,
-            mass      = 1,
-            intensity = 0.3,
-            value_epsilon = 0.3,
-            velocity_epsilon = 1,
-        },
-
         blur             = {
             enabled           = false,
             size              = 2,
@@ -85,17 +74,6 @@ hl.config({
             noise             = 0,
             vibrancy          = 0.1,
             vibrancy_darkness = 0,
-            variant           = "drops",
-
-            drops = {
-                speed = 2,
-            },
-
-            glass = {
-                refraction = 20,
-                roughness  = 1.0,
-                size       = 50,
-            },
         },
     },
 })
@@ -126,7 +104,6 @@ hl.config({
         disable_hyprland_logo       = false,
         allow_session_lock_restore  = true,
         always_follow_on_dnd        = true,
-        font_family                 = "Inter",
         force_default_wallpaper     = -1,
         session_lock_blur           = true,
         session_lock_xray           = true,
@@ -325,5 +302,4 @@ hl.window_rule({ match = { class = "ai.storyteller.effectcraft" }, float = true,
 -- Layer_rules
 
 hl.layer_rule({ match = { namespace = "rofi" }, dim_around = true, animation = "slide bottom", })
-hl.layer_rule({ match = { namespace = "fuzzel" }, dim_around = true, animation = "slide bottom", })
 hl.layer_rule({ match = { namespace = "notifications"}, animation = "slide right", })
