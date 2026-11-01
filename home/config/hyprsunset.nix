@@ -8,7 +8,7 @@
           identity = true;
         }
         {
-          time = "19:00";
+          time = "22:00";
           temperature = 4000;
           gamma = 1.0;
         }
