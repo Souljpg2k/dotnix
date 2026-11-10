@@ -15,7 +15,16 @@ let
   };
 in
 {
-  fonts.packages = [
+  fonts.packages = with pkgs; [
     google-sans-flex
+    inter
+    oswald
+    poppins
+    noto-fonts
+    nerd-fonts.jetbrains-mono
+    nerd-fonts.iosevka
+    kanit-font
+    libre-baskerville
+    material-symbols
   ];
 }

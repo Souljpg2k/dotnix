@@ -1,4 +1,3 @@
-{ pkgs, ... }:
 {
   fonts.fontconfig = {
     enable = true;
@@ -21,16 +20,4 @@
       ];
     };
   };
-
-  home.packages = with pkgs; [
-    inter
-    oswald
-    poppins
-    noto-fonts
-    nerd-fonts.jetbrains-mono
-    nerd-fonts.iosevka
-    kanit-font
-    libre-baskerville
-    material-symbols
-  ];
 }
