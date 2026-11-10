@@ -6,7 +6,7 @@
     configuration {
         show-icons: true;
         location: 2;
-        font: "Inter Display Medium 12";
+        font: "Google Sans Flex Medium 12";
         display-drun: "> ";
         display-run: "> ";
     }

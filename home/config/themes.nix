@@ -20,7 +20,7 @@ let
     name = "Adwaita";
   };
   font = {
-    name = "Inter Display";
+    name = "Google Sans Flex";
     size = 12;
   };
 in

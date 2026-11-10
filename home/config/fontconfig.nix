@@ -4,6 +4,7 @@
     enable = true;
     defaultFonts = {
       sansSerif = [
+        "Google Sans Flex"
         "Inter"
         "Kanit"
       ];
