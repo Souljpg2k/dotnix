@@ -4,6 +4,7 @@
     discord
     obsidian
     loupe
+    yazi
     kdePackages.dolphin
 
     zed-editor
