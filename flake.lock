@@ -67,11 +67,11 @@
         "quickshell": "quickshell"
       },
       "locked": {
-        "lastModified": 1794169016,
-        "narHash": "sha256-sSoAXAXNKf6uozLK6ZaVmpSyBACBZ9M5VRw394aKN+U=",
+        "lastModified": 1794304571,
+        "narHash": "sha256-XtPN1zUP0TRjBRWpcuJGsm56X9qvAskLrF0nlA4THOU=",
         "owner": "Souljpg2k",
         "repo": "shell",
-        "rev": "690850e5c26ce1bb0f2d878620095946af37b19c",
+        "rev": "fc08fbd000aaad668a310a0f128db15d4c18f0e8",
         "type": "github"
       },
       "original": {
