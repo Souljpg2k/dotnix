@@ -15,7 +15,7 @@
       appearance = {
         transparency =  {
           enabled = true;
-          base = 0.95;
+          base = 0.9;
           layers = 0.4;
         };
       };
