@@ -178,6 +178,8 @@ hl.bind("SUPER + SHIFT + C", hl.dsp.exec_cmd("code"))
 hl.bind("SUPER + L", hl.dsp.global("caelestia:lock"))
 hl.bind("SUPER + P", hl.dsp.global("caelestia:session"))
 hl.bind("SUPER + W", hl.dsp.global("caelestia:launcher"))
+hl.bind("SUPER + O", hl.dsp.global("caelestia:sidebar"))
+hl.bind("CTRL + SUPER + R", hl.dsp.exec_cmd("caelestia shell -r -d"))
 
 -- Rofi
 hl.bind("SUPER + R", hl.dsp.exec_cmd("rofi -show drun"))
