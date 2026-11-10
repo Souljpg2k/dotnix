@@ -13,7 +13,7 @@
     };
     settings = {
       appearance = {
-        transparency =  {
+        transparency = {
           enabled = true;
           base = 0.9;
           layers = 0.4;
@@ -59,7 +59,7 @@
           }
           {
             id = "bluetooth";
-            enabled = false;
+            enabled = true;
           }
           {
             id = "battery";
@@ -67,6 +67,44 @@
           }
           {
             id = "kbLayout";
+            enabled = true;
+          }
+        ];
+        entries = [
+          {
+            id = "logo";
+            enabled = true;
+          }
+          {
+            id = "workspaces";
+            enabled = true;
+          }
+          {
+            id = "spacer";
+            enabled = true;
+          }
+          {
+            id = "activeWindow";
+            enabled = true;
+          }
+          {
+            id = "spacer";
+            enabled = true;
+          }
+          {
+            id = "tray";
+            enabled = true;
+          }
+          {
+            id = "clock";
+            enabled = true;
+          }
+          {
+            id = "statusIcons";
+            enabled = true;
+          }
+          {
+            id = "power";
             enabled = true;
           }
         ];
