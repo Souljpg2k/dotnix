@@ -4,6 +4,7 @@
     discord
     obsidian
     loupe
+    nvtopPackages.amd
     yazi
     kdePackages.dolphin
 
