@@ -2,10 +2,8 @@
 {
   imports = [
     ./fonts
-    ./bash.nix
-    ./desktop.nix
+    ./modules
     ./hardware-configuration.nix
-    ./pipewire.nix
   ];
 
   boot.loader.systemd-boot.enable = true;
