@@ -1,13 +1,5 @@
 { config, pkgs, ... }:
 let
-  theme = {
-    package = pkgs.catppuccin-gtk.override {
-      accents = [ "mauve" ];
-      size = "standard";
-      variant = "mocha";
-    };
-    name = "catppuccin-mocha-mauve-standard";
-  };
   iconTheme = {
     package = pkgs.adwaita-icon-theme;
     name = "Adwaita";
@@ -17,9 +9,9 @@ let
     size = 12;
   };
   qtAppearance = {
-     color_scheme_path = "$HOME/.local/state/caelestia/theme/qtct-colors.conf";
-     custom_palette = true;
-     style = "Fusion";
+    color_scheme_path = "$HOME/.local/state/caelestia/theme/qtct-colors.conf";
+    custom_palette = true;
+    style = "Fusion";
   };
 in
 {
@@ -44,9 +36,9 @@ in
 
   gtk = {
     enable = true;
-    inherit theme iconTheme font;
+    inherit iconTheme font;
 
-    gtk4 = { inherit theme iconTheme font; };
+    gtk4 = { inherit iconTheme font; };
   };
 
   xdg.configFile."qt6ct/qss/dolphin.qss".text = ''

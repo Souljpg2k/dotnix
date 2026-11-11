@@ -115,7 +115,7 @@
     cli = {
       enable = true;
       settings = {
-        theme.enableGtk = false;
+        theme.enableGtk = true;
       };
     };
   };
