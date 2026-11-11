@@ -1,12 +1,5 @@
-{ pkgs, ... }:
+{ config, pkgs, ... }:
 let
-  kvantumVariant = "mocha";
-  kvantumAccent = "mauve";
-  kvantumName = "catppuccin-${kvantumVariant}-${kvantumAccent}";
-  kvantumPkg = pkgs.catppuccin-kvantum.override {
-    variant = kvantumVariant;
-    accent = kvantumAccent;
-  };
   theme = {
     package = pkgs.catppuccin-gtk.override {
       accents = [ "mauve" ];
@@ -23,6 +16,11 @@ let
     name = "Google Sans Flex";
     size = 12;
   };
+  qtAppearance = {
+     color_scheme_path = "$HOME/.local/state/caelestia/theme/qtct-colors.conf";
+     custom_palette = true;
+     style = "Fusion";
+  };
 in
 {
   home.pointerCursor = {
@@ -35,53 +33,37 @@ in
   qt = {
     enable = true;
     platformTheme.name = "qtct";
-    style.name = "kvantum";
-  };
+    style.name = qtAppearance.style;
 
-  gtk = {
-    inherit theme iconTheme font;
-    enable = true;
-    gtk4 = {
-      inherit theme iconTheme font;
+    qt5ctSettings.Appearance = qtAppearance;
+    qt6ctSettings = {
+      Appearance = qtAppearance;
+      Interface.stylesheets = "${config.xdg.configHome}/qt6ct/qss/dolphin.qss";
     };
   };
 
-  xdg.configFile = {
-    "Kvantum/kvantum.kvconfig".text = ''
-      [General]
-      theme=${kvantumName}
-    '';
-    "Kvantum/${kvantumName}".source = "${kvantumPkg}/share/Kvantum/${kvantumName}";
+  gtk = {
+    enable = true;
+    inherit theme iconTheme font;
+
+    gtk4 = { inherit theme iconTheme font; };
   };
 
+  xdg.configFile."qt6ct/qss/dolphin.qss".text = ''
+    QToolBar { border: none; }
+    KUrlNavigator { background: transparent; }
+    QFrame { border: none; }
+    QAbstractScrollArea { border: none; }
+  '';
+
   xdg.configFile."dolphinrc".text = ''
-    MenuBar=Disabled
-
-    [CompactMode]
-    MaximumTextWidthIndex=2
-    UseSystemFont=false
-
     [ContextMenu]
     ShowCopyMoveMenu=true
-
-    [General]
-    ModifiedStartupSettings=true
-    ShowFullPath=true
-    ShowStatusBar=FullWidth
-    Version=202
-    ViewPropsTimestamp=2026,8,23,23,29,45.034
-
-    [IconsMode]
-    UseSystemFont=false
-
-    [KFileDialog Settings]
-    Places Icons Auto-resize=false
-    Places Icons Static Size=22
-
-    [MainWindow]
-    MenuBar=Disabled
 
     [UiSettings]
     ColorScheme=default
   '';
+
+  xdg.configFile."kdeglobals".source =
+    config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/.local/state/caelestia/theme/kdeglobals.conf";
 }
