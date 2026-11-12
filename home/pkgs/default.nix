@@ -4,11 +4,10 @@
     discord
     obsidian
     loupe
-    nvtopPackages.amd
-    yazi
     kdePackages.dolphin
 
     zed-editor
+    zed-discord-presence
 
     brave
     tor-browser
@@ -21,15 +20,21 @@
     shfmt
     prettier
     ruff
-    stylua
     black
+    stylua
+    lua-language-server
 
     fzf
     tree
     ripgrep
     psmisc
 
+    color-lsp
+
     cava
+    yazi
+    nvtopPackages.amd
+
     obs-studio
     pwvucontrol
     yt-dlp
