@@ -5,7 +5,7 @@ let
     time = "rgb(205, 214, 244)";
   };
   fonts = {
-    family = "Inter";
+    family = "Google Sans Flex";
     icon = "Material Symbols Outlined";
   };
 in
