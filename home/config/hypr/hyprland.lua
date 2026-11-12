@@ -104,7 +104,6 @@ hl.config({
         disable_hyprland_logo       = false,
         allow_session_lock_restore  = true,
         always_follow_on_dnd        = true,
-        force_default_wallpaper     = -1,
         session_lock_blur           = true,
         session_lock_xray           = true,
 
@@ -198,8 +197,8 @@ hl.bind("SUPER + F", hl.dsp.exec_cmd("hyprshot -m region -o $HOME/Pictures/Scree
 hl.bind("SUPER + G", hl.dsp.exec_cmd("hyprshot -m window -o $HOME/Pictures/Screenshots"))
 hl.bind("SUPER + Print", hl.dsp.exec_cmd("hyprshot -m output -o $HOME/Pictures/Screenshots"))
 
--- lock
-hl.bind("SUPER + L", hl.dsp.exec_cmd("lock"))
+-- Hyprlock
+hl.bind("SUPER + SHIFT + L", hl.dsp.exec_cmd("hyprlock"))
 
 -- Move focus with SUPER + arrow keys
 hl.bind("SUPER + left", hl.dsp.focus({ direction = "left" }))
