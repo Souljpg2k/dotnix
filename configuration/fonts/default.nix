@@ -27,4 +27,25 @@ in
     libre-baskerville
     material-symbols
   ];
+  fonts.fontconfig = {
+    enable = true;
+    defaultFonts = {
+      sansSerif = [
+        "Google Sans Flex"
+        "Inter"
+        "Kanit"
+      ];
+      serif = [
+        "Libre Baskerville"
+        "Noto Serif"
+      ];
+      monospace = [
+        "JetBrainsMono Nerd Font"
+        "Iosevka Nerd Font"
+      ];
+      emoji = [
+        "Noto Color Emoji"
+      ];
+    };
+  };
 }

@@ -6,7 +6,6 @@
     ./btop.nix
     ./fastfetch.nix
     ./fish.nix
-    ./fontconfig.nix
     ./ghostty.nix
     ./kitty.nix
     ./mpv.nix
