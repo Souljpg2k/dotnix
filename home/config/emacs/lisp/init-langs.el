@@ -33,7 +33,7 @@
   :config
   (add-to-list 'lsp-language-id-configuration '(qml-ts-mode . "qml-ts"))
   (lsp-register-client
-   (make-lsp-client :new-connection (lsp-stdio-connection '("qmlls"))
+   (make-lsp-client :new-connection (lsp-stdio-connection '("qmlls" "-E"))
                     :activation-fn (lsp-activate-on "qml-ts")
                     :server-id 'qmlls))
   (add-hook 'qml-ts-mode-hook
