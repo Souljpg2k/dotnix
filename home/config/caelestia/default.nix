@@ -109,6 +109,17 @@
           }
         ];
       };
+      background = {
+        enabled = true;
+        wallpaperEnabled = true;
+        visualiser = {
+          enabled = true;
+          autoHide = true;
+          blur = false;
+          rounding = 1;
+          spacing = 1;
+        };
+      };
       launcher.actionPrefix = ".";
       paths.wallpaperDir = "~/Pictures/Wallpapers";
     };
