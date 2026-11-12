@@ -31,7 +31,7 @@
 
     cava
     obs-studio
-    pavucontrol
+    pwvucontrol
     yt-dlp
     ffmpeg
     ffmpegthumbnailer
