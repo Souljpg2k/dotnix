@@ -33,7 +33,6 @@
 
     cava
     yazi
-    nvtopPackages.amd
 
     obs-studio
     pwvucontrol
