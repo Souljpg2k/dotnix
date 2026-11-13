@@ -53,7 +53,6 @@
     hyprshot
     hyprpicker
     hyprshutdown
-    hyprpolkitagent
 
     quickshell
     qt6.qtsvg

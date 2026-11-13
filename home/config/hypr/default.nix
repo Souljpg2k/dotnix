@@ -8,5 +8,8 @@ in
     ./hyprlock.nix
     ./hyprsunset.nix
   ];
+
+  services.hyprpolkitagent.enable = true;
+
   xdg.configFile."hypr/hyprland.lua".source = config.lib.file.mkOutOfStoreSymlink hyprlua;
 }
