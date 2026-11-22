@@ -75,3 +75,7 @@ hl.layer_rule({
     blur = true,
     ignore_alpha = 0,
 })
+hl.window_rule({
+    match = { class = "dev.zed.Zed" },
+    no_blur = true,
+})
