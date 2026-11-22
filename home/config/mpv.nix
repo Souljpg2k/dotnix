@@ -12,12 +12,5 @@
   };
   programs.mpvpaper = {
     enable = true;
-    pauseList = ''
-      brave
-      helium
-      zen-beta
-      zed-editor
-      code
-    '';
   };
 }
