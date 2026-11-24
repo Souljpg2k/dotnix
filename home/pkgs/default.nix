@@ -9,7 +9,6 @@
     yazi
 
     neovim
-    vscode
     zed-discord-presence
     zed-editor
 
