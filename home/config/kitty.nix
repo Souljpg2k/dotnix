@@ -5,8 +5,9 @@
       name = "JetBrainsMono Nerd Font Mono";
       size = 12.0;
     };
+    shellIntegration.mode = "no-cursor";
     settings = {
-      cursor_shape = "beam";
+      cursor_shape = "block";
       cursor_trail = 1;
       cursor_blink_interval = 0.5;
       confirm_os_window_close = 0;
@@ -15,7 +16,7 @@
       window_padding_width = 21;
       background_opacity = 0.5;
       dynamic_background_opacity = true;
-      shell = "bash";
+      shell = "fish";
       foreground = "#e0e3e8";
       background = "#101417";
       cursor = "#b8c8d9";
