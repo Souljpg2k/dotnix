@@ -2,7 +2,7 @@
   programs.kitty = {
     enable = true;
     font = {
-      name = "JetBrainsMono Nerd Font Mono";
+      name = "JetBrainsMono Nerd Font";
       size = 12.0;
     };
     shellIntegration.mode = "no-cursor";
