@@ -18,7 +18,7 @@ hl.config({
         dim_modal = true,
         dim_special = 0.2,
         dim_strength = 0.4,
-        rounding = 1,
+        rounding = 18,
         rounding_power = 3,
         active_opacity = 1.0,
         inactive_opacity = 1.0,
