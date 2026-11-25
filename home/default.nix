@@ -3,7 +3,10 @@
     username = "arx";
     homeDirectory = "/home/arx";
     stateVersion = "26.05";
-    sessionVariables.EDITOR = "emacs";
+    sessionVariables = {
+      EDITOR = "nvim";
+      VISUAL = "nvim";
+    };
   };
 
   imports = [
