@@ -57,7 +57,7 @@ hl.window_rule({
     no_blur = true,
 })
 hl.layer_rule({
-    match = { namespace = "yuki" },
+    match = { namespace = "qsbar" },
     blur = true,
     xray = true,
     ignore_alpha = 0,
