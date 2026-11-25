@@ -3,6 +3,10 @@
     enable = true;
     settings = {
       add_newline = false;
+      format = ''
+        $directory$git_branch
+        $character
+      '';
       directory = {
         home_symbol = "";
         read_only = " 󰌾 ";
