@@ -64,7 +64,14 @@
     nodejs
     pkg-config
     python3
+    basedpyright
     rustc
     tree-sitter
+    typescript
+    typescript-language-server
+    vscode-langservers-extracted
+    astro-language-server
+    emmet-language-server
+    lua-language-server
   ];
 }
