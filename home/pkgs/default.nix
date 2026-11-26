@@ -30,7 +30,6 @@
     ripgrep
     tree
 
-    cava
     ffmpeg
     ffmpegthumbnailer
     obs-studio

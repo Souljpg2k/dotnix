@@ -3,7 +3,6 @@
     ./emacs
     ./hypr
     ./btop.nix
-    ./cava.nix
     ./fastfetch.nix
     ./fish.nix
     ./ghostty.nix
