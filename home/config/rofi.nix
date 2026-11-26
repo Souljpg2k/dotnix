@@ -3,11 +3,11 @@
   xdg.configFile."rofi/config.rasi".text = ''
     * {
         background: #1c1c1e;
-        foreground: #e0e3e8;
-        selected: #242426;
-        text-selected: #b8c8d9;
-        text-element: #c1c7ce;
-        textbox: #e0e3e8;
+        foreground: #f2f2f7;
+        selected: #2c2c2e;
+        text-selected: #e5e5ea;
+        text-element: #8e8e93;
+        textbox: #c7c7cc;
         background-color: transparent;
     }
     configuration {
