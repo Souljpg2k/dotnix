@@ -11,7 +11,6 @@
     ./mako.nix
     ./mpv.nix
     ./rofi.nix
-    ./starship.nix
     ./themes.nix
   ];
 }
