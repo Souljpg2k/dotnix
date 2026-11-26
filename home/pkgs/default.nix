@@ -73,5 +73,6 @@
     astro-language-server
     emmet-language-server
     lua-language-server
+    bash-language-server
   ];
 }
