@@ -1,8 +1,8 @@
 let
   colors = {
-    bg = "rgb(17, 17, 27)";
-    fg = "rgb(205, 214, 244)";
-    time = "rgb(205, 214, 244)";
+    bg = "rgb(28, 28, 30)";
+    fg = "rgb(229, 229, 234)";
+    time = "rgb(242, 242, 247)";
   };
   fonts = {
     family = "Roboto";
