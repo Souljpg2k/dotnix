@@ -60,6 +60,7 @@
     gcc
     gh
     go
+    gopls
     ninja
     nodejs
     pkg-config
